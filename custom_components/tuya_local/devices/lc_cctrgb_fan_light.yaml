@@ -9,6 +9,28 @@ entities:
       - id: 20
         name: switch
         type: boolean
+      - id: 21
+        name: color_mode
+        type: string
+        hidden: true
+      - id: 22
+        name: brightness
+        type: integer
+        hidden: true
+        range:
+          min: 10
+          max: 1000
+      - id: 23
+        name: color_temp
+        type: integer
+        hidden: true
+        range:
+          min: 0
+          max: 1000
+        mapping:
+          - target_range:
+              min: 2700
+              max: 6500
       - id: 51
         name: mix_rgbcw
         type: base64
